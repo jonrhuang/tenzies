@@ -7,6 +7,7 @@ import Confetti from 'react-confetti'
 function App() {
   const [dice, setDice] = useState(() => generateAllNewDice())
   const buttonRef = useRef(null)
+  const [count, setCount] = useState(0)
 
   const gameWon = dice.every(die => die.isHeld) &&
     dice.every(die => die.value === dice[0].value)
@@ -36,9 +37,11 @@ function App() {
           die :
           { ...die, value: Math.ceil(Math.random() * 6) }
       ))
+      setCount(prev => prev+1)
     }
     else {
       setDice(generateAllNewDice())
+      setCount(0)
     }
   }
 
@@ -72,6 +75,9 @@ function App() {
       <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
       <div className="dice-container">
         {diceElements}
+      </div>
+      <div className='roll-count'>
+        Rerolls: {count}
       </div>
       <button className="roll-dice" onClick={rollDice} ref={buttonRef}>
         {gameWon ? "New Game" : "Roll"}
