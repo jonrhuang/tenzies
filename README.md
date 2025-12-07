@@ -10,7 +10,7 @@ Hold and roll dice until you get 10 of the same number.
 ---
 ## Project Structure
 ```
-react-facts/
+tenzies/
 ├── public/
 ├── src/
 │ ├── components/
