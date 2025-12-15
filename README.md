@@ -1,10 +1,10 @@
 # Tenzies Game
-Hold and roll dice until you get 10 of the same number.
+Hold and roll dice until you get 10 of the same number. Following Scrimba "Learn React" course
 
 ## Tech Stack
 - **Vite**
 - **JavaScript**
-- **Framework**: React
+- **Library**: React
 - **Package Manager**: npm
 
 ---
