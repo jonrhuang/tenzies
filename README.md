@@ -1,5 +1,5 @@
 # Tenzies Game
-Hold and roll dice until you get 10 of the same number. This project was made following Scrimba "Learn React" course
+Hold and roll dice until you get 10 of the same number. Try to win the game with the lowest number of re-rolls. This project was made following Scrimba "Learn React" course
 
 ## Tech Stack
 - **Vite**
